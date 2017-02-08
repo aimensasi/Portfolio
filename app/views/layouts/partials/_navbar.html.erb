@@ -1,0 +1,22 @@
+<section class="row header">
+  <% if  current_page?('/')%>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded ">
+  <% else %>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-inverse">
+  <% end %>
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+      data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <%= link_to("Aimen.S", root_url , :class => "navbar-brand") %>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+            <%= link_to("Home", root_url , :class => "nav-item nav-link active") %>
+            <%= link_to("Works", works_path , :class => "nav-item nav-link") %>
+            <%= link_to("About Me", root_url , :class => "nav-item nav-link") %>
+        </div>
+      </div>
+    </div>
+  </nav>  
+</section>

@@ -1,0 +1,47 @@
+.about-me{
+	@include section-spacing();
+	margin-top: 40px;
+	.title{
+		font-family: $primary-font;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		position: relative;
+		margin-bottom: 50px;
+		color: $primary-color;
+		&::before{
+			content: '';
+			background-color: $primary-color;
+			height: 3px;
+			width: 70px;
+			position: absolute;
+			bottom: -5px;
+			left: 0px;
+		}
+	}
+	.leads{
+		font-size: 1.2rem;
+		font-weight: 200;
+	}
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+	.about-me{
+		margin-top: 0px;
+		padding-top: 50px;
+		.title{
+			margin-bottom: 20px;
+			font-size: 1.2rem;
+			&:before{
+				height: 2px;
+				width: 44px;
+			}
+		}
+		.leads{
+			font-size: 0.9rem;
+		}
+	}
+}

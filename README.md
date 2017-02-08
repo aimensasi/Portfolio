@@ -2,7 +2,6 @@
 
 Portfolio to showcase some of the work I have done:
 
-`
 
 * Ruby version 2.3.1p112
 
@@ -12,4 +11,4 @@ Portfolio to showcase some of the work I have done:
 
 * Site Url: 
 
-`
+

@@ -1,0 +1,29 @@
+<section class="row works">
+  <div class="container">
+    <h3 class="title">Works</h3> 
+    <div class="row works-list">
+      <div class="col-md-4 col-sm-12 info-col">
+        <h2 class="title-small">Lates Web Development Projects</h2>
+        <p class="leads">
+          Check out some of my finest work.
+          <br>
+          Each Project has a link to a live demo and the source code.
+        </p>
+      </div>
+      <% @works.each do |work| %>
+        <div class="col-md-4 col-sm-12 photo">
+          <div class="card photo-link" style="background-image: url('<%= work.img.url %>');"
+          data-url="#">
+            <div class="card-block flex-column">
+              <h2 class="name"><%= work.title %></h2>
+              <p class="leads"><%= work.desc %></p>
+              <a href="<%= work.github_url %>" target="_blank" class="btn-github">
+                <i class="fa fa-tags" aria-hidden="true"></i> Visit Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div> <!-- Row -->
+  </div>
+</section>

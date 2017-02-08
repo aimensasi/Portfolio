@@ -1,0 +1,41 @@
+.hero{
+	@include section-spacing();
+	@include imageCover('coding.jpeg');
+	margin-top: -100px;
+	text-align: center;
+	h3{
+		display: inline-block;
+		background: black;
+		opacity: .6;
+		padding: 10px 10px;
+		margin-bottom: 15px;
+		color: white;
+		font-weight: 100;
+		font-family: sans-serif;
+	}
+	.semi-title{
+		// min-width: 496px;
+		// text-align: center;
+	}
+	.title{
+		margin-top: 300px;
+		padding: 10px 30px;
+	}
+
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+	.hero{
+		background-attachment: initial;
+		height: 100vh;
+		h3{
+			font-size: 1.2rem;
+		}
+		.title{
+			margin-top: 240px;
+		}
+	}
+}

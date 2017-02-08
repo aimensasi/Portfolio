@@ -1,0 +1,19 @@
+@import "bootstrap";
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/footer';
+
+// Hero Section
+@import 'partials/hero';
+
+// Work Section
+@import 'partials/work';
+
+// About Section
+@import 'partials/about';
+
+
+// Animation Cursor
+@import 'partials/typed';

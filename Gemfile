@@ -14,6 +14,12 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+#Bootstarp 4 
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -32,13 +38,26 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# carrier_wave
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem "mini_magick"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
+  # gem 'rails-controller-testing'
+  gem 'guard-rspec'
+  gem 'annotate'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'faker', '~> 1.6', '>= 1.6.6'
 end
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
